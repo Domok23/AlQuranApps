@@ -3,11 +3,24 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: 'Amiri';
-  src: url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+  font-family: 'LPMQ';
+  src: url('https://raw.githubusercontent.com/quran/quran.com-images/master/fonts/quran/hafs/v1/woff2/p1.woff2') format('woff2');
+  font-display: swap;
 }
 
 .font-arabic {
-  font-family: 'Amiri', serif;
-  line-height: 2;
+  font-family: 'LPMQ', serif;
+  line-height: 2.5;
 }
+
+/* Tajwid colors */
+[class^="color-tajwid-"] {
+  font-family: 'LPMQ', serif !important;
+}
+
+.color-tajwid-1 { color: #E91E63; } /* Idgham Bighunnah */
+.color-tajwid-2 { color: #9C27B0; } /* Idgham Bilaghunnah */
+.color-tajwid-3 { color: #2196F3; } /* Ikhfa */
+.color-tajwid-4 { color: #4CAF50; } /* Iqlab */
+.color-tajwid-5 { color: #FF9800; } /* Qalqalah */
+.color-tajwid-6 { color: #795548; } /* Idzhar */
